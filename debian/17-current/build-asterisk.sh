@@ -70,6 +70,12 @@ menuselect/menuselect --enable BETTER_BACKTRACES menuselect.makeopts
 # enable ooh323
 menuselect/menuselect --enable chan_ooh323 menuselect.makeopts
 
+# enable format_mp3
+menuselect/menuselect --enable format_mp3 menuselect.makeopts
+
+# load source files for format_mp3
+sh contrib/scripts/get_mp3_source.sh
+
 # codecs
 # menuselect/menuselect --enable codec_opus menuselect.makeopts
 # menuselect/menuselect --enable codec_silk menuselect.makeopts
